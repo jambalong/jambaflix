@@ -100,8 +100,6 @@ GEM
       reline (>= 0.3.8)
     drb (2.2.1)
     erubi (1.13.0)
-    figaro (1.2.0)
-      thor (>= 0.14.0, < 2)
     flickr (2.1.0)
     globalid (1.2.1)
       activesupport (>= 6.1)
@@ -312,7 +310,6 @@ DEPENDENCIES
   brakeman
   capybara
   debug
-  figaro (~> 1.2)
   flickr (~> 2.1)
   importmap-rails
   jbuilder
