@@ -57,3 +57,5 @@ group :test do
 end
 
 gem "flickr", "~> 2.1"
+
+gem "faraday", "~> 2.12"
