@@ -1,0 +1,17 @@
+<h1>JambaFlix</h1>
+
+<%= form_with url: root_path, method: :get, local: true do |form| %>
+  <%= form.label :flickr_user_id, "Flickr User ID:" %>
+  <%= form.text_field :flickr_user_id%>
+  <%= form.submit "Fetch User Photos"%>
+<% end %>
+
+<% if @user_photos.present? %>
+  <% @user_photos.each do |photo| %>
+    <h2><%= photo[:title] %></h2>
+    <img src="<%= photo[:url] %>" alt="<%= photo[:title] %>">
+  <% end %>
+<% else %>
+  <p>No photos available.</p>
+<% end %>
+
